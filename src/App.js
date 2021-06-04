@@ -2,6 +2,17 @@ import { PencilAltIcon } from '@heroicons/react/outline'
 
 import Form from './Form'
 
+const REPO_URL = "https://github.com/signalnerve/workers-airtable-form-example"
+
+const ExternalLink = ({ children, hoverColor = "text-teal-800", href }) =>
+  <a
+    className={`underline hover:${hoverColor} transition-all`}
+    href={href}
+    target="_blank"
+  >
+    {children}
+  </a>
+
 export default function FormPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -32,8 +43,10 @@ export default function FormPage() {
                 Workers Airtable Form Example
               </h1>
               <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-                An example form that uses serverless functions, provided by Cloudflare Workers, to submit form data to an Airtable table.{" "}
-                <a className="underline hover:text-warm-gray-700 transition-all" href="https://github.com/signalnerve/workers-airtable-form-example" target="_blank">Check out the source to learn more.</a>
+                An example form that uses serverless functions, provided by <ExternalLink href="https://workers.dev">Cloudflare Workers</ExternalLink>, to submit form data to an <ExternalLink href="https://airtable.com">Airtable</ExternalLink> table.{" "}
+                <ExternalLink href={REPO_URL}>
+                  Check out the source to learn more.
+                </ExternalLink>
               </p>
             </div>
           </div>
@@ -176,7 +189,7 @@ export default function FormPage() {
                   <h3 className="text-lg font-medium text-white">Example form</h3>
                   <p className="mt-6 text-base text-teal-50 max-w-3xl">
                     A fully-featured HTML5 <code>form</code> element that submits data to a serverless function.
-                    This data is added to an Airtable table, which can be connected with various integrations and extensions to notify
+                    This data is added to an <ExternalLink hoverColor="text-teal-300" href="https://airtable.com">Airtable</ExternalLink> table, which can be connected with various integrations and extensions to notify
                     you on new submissions and changes.
                   </p>
                 </div>
@@ -198,7 +211,7 @@ export default function FormPage() {
         </h2>
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <p className="text-base text-warm-gray-400 xl:text-center">
-            Workers Airtable Form Example is open-source on GitHub.
+            Workers Airtable Form Example is <ExternalLink hoverColor="text-warm-gray-200" href={REPO_URL}>open source on GitHub</ExternalLink>.
           </p>
         </div>
       </footer>
