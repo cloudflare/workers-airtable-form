@@ -2,7 +2,7 @@ import { PencilAltIcon } from '@heroicons/react/outline'
 
 import Form from './Form'
 
-const REPO_URL = "https://github.com/signalnerve/workers-airtable-form-example"
+const REPO_URL = "https://github.com/signalnerve/workers-airtable-form"
 
 const ExternalLink = ({ children, hoverColor = "text-teal-800", href }) =>
   <a
