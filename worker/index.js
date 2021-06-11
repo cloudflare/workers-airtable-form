@@ -1,5 +1,3 @@
-import qs from 'qs'
-
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
@@ -22,7 +20,7 @@ const submitHandler = async request => {
     })
   }
 
-  const body = await request.text()
+  const body = await request.formData();
 
   const {
     first_name,
@@ -31,7 +29,7 @@ const submitHandler = async request => {
     phone,
     subject,
     message
-  } = qs.parse(body)
+  } = Object.fromEntries(body)
 
   const reqBody = {
     fields: {
