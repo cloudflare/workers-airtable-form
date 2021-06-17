@@ -59,9 +59,12 @@ After completing these steps, the workflow should run whenever you push a commit
 
 ### Pages deployment details
 
-Below are the configuration values you should use to configure your new Cluodflare Pages project, when deploying the front-end user interface for this sample code:
+Below are the configuration values you should use to configure your new Cloudflare Pages project, when deploying the front-end user interface for this sample code:
 
 | Config option   | Value                                |
 | --------------- | ------------------------------------ |
 | Build command   | `npm run build --workspace frontend` |
 | Build directory | `frontend/build`                     |
+| `NPM_VERSION`*  | `7.13.0`                             |
+
+_*_: `NPM_VERSION` is an _environment variable_ that should be set for the Pages project.
