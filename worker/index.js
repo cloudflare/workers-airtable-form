@@ -53,5 +53,5 @@ async function handleRequest(request) {
     return submitHandler(request)
   }
 
-  return new Response.redirect(FORM_URL)
+  return Response.redirect(FORM_URL)
 }
