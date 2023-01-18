@@ -1,9 +1,19 @@
-const SERVERLESS_FN_URL = "https://workers-airtable-form.signalnerve.workers.dev/submit"
+const SERVERLESS_FN_URL =
+  "https://workers-airtable-form.httpsworkers-airtable-form-bg9pagesdev.workers.dev";
 
 export default () => (
-  <form action={SERVERLESS_FN_URL} method="POST" className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+  <form
+    action={
+      "https://workers-airtable-form.httpsworkers-airtable-form-bg9pagesdev.workers.dev"
+    }
+    method="POST"
+    className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
+  >
     <div>
-      <label htmlFor="first_name" className="block text-sm font-medium text-warm-gray-900">
+      <label
+        htmlFor="first_name"
+        className="block text-sm font-medium text-warm-gray-900"
+      >
         First name
       </label>
       <div className="mt-1">
@@ -19,7 +29,10 @@ export default () => (
       </div>
     </div>
     <div>
-      <label htmlFor="last_name" className="block text-sm font-medium text-warm-gray-900">
+      <label
+        htmlFor="last_name"
+        className="block text-sm font-medium text-warm-gray-900"
+      >
         Last name
       </label>
       <div className="mt-1">
@@ -35,7 +48,10 @@ export default () => (
       </div>
     </div>
     <div>
-      <label htmlFor="email" className="block text-sm font-medium text-warm-gray-900">
+      <label
+        htmlFor="email"
+        className="block text-sm font-medium text-warm-gray-900"
+      >
         Email
       </label>
       <div className="mt-1">
@@ -52,7 +68,10 @@ export default () => (
     </div>
     <div>
       <div className="flex justify-between">
-        <label htmlFor="phone" className="block text-sm font-medium text-warm-gray-900">
+        <label
+          htmlFor="phone"
+          className="block text-sm font-medium text-warm-gray-900"
+        >
           Phone
         </label>
         <span id="phone-optional" className="text-sm text-warm-gray-500">
@@ -72,7 +91,10 @@ export default () => (
       </div>
     </div>
     <div className="sm:col-span-2">
-      <label htmlFor="subject" className="block text-sm font-medium text-warm-gray-900">
+      <label
+        htmlFor="subject"
+        className="block text-sm font-medium text-warm-gray-900"
+      >
         Subject
       </label>
       <div className="mt-1">
@@ -88,7 +110,10 @@ export default () => (
     </div>
     <div className="sm:col-span-2">
       <div className="flex justify-between">
-        <label htmlFor="message" className="block text-sm font-medium text-warm-gray-900">
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium text-warm-gray-900"
+        >
           Message
         </label>
         <span id="message-max" className="text-sm text-warm-gray-500">
@@ -104,7 +129,7 @@ export default () => (
           aria-describedby="message-max"
           placeholder="Tenetur optio quaerat expedita vero et illo. Tenetur nam explicabo dolor voluptatem eveniet. Commodi est beatae id voluptatum porro laudantium. Quam placeat accusamus vel officiis vel. Et perferendis dicta ut perspiciatis quos iste. Tempore autem molestias voluptates in sapiente enim doloremque."
           required
-          defaultValue={''}
+          defaultValue={""}
         />
       </div>
     </div>
@@ -117,4 +142,4 @@ export default () => (
       </button>
     </div>
   </form>
-)
+);
