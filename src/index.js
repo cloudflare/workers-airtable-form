@@ -1,3 +1,5 @@
+const html = () => ``;
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url)
@@ -39,7 +41,7 @@ export default {
 }
 
 
-const createAirtableRecord = (env, body) => {
+async function createAirtableRecord (env, body) {
   try {
     const result = fetch(`https://api.airtable.com/v0/${env.AIRTABLE_BASE_ID}/${encodeURIComponent(env.AIRTABLE_TABLE_NAME)}`, {
       method: 'POST',
