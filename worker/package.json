@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx wrangler dev",
-    "build": "npx wrangler publish",
+    "deploy": "npx wrangler publish",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
