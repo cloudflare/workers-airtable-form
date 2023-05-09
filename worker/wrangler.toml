@@ -1,10 +1,8 @@
 name = "workers-airtable-form"
-type = "javascript"
-
-account_id = "dc56444c4c955a1653106ccf997c1067"
-workers_dev = true
+main = "src/index.js"
+compatibility_date = "2023-05-09"
 
 [vars]
-AIRTABLE_BASE_ID = "appeSWNykwi3SMV4O"
+AIRTABLE_BASE_ID = "appuKpifoMps5gP3q"
 AIRTABLE_TABLE_NAME = "Form Submissions"
 FORM_URL = "https://workers-airtable-form.pages.dev"
